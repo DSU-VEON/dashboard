@@ -126,13 +126,13 @@ if st.button("Give a Loan"):
         scoring_gif = st.expander("Scoring")
         # scoring_gif.image(Image.open("gifs/scoring.gif"), caption="Optional caption", use_column_width=True)
         # scoring_gif.markdown("![Alt Text](https://github.com/DSU-VEON/dashboard/blob/main/scoring.gif?raw=true)")
-        scoring_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/scoring.gif?raw=true" alt="Alt Text" width=1200 height=800>', unsafe_allow_html=True)
+        scoring_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/scoring.gif?raw=true" alt="Alt Text" width=1200 height=600>', unsafe_allow_html=True)
         
 
             
         income_gif = st.expander("Income")
         # income_gif.markdown("![Alt Text](https://github.com/DSU-VEON/dashboard/blob/main/income.gif?raw=true)")
-        income_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/income.gif?raw=true" alt="Alt Text" width=1200 height=800>', unsafe_allow_html=True)
+        income_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/income.gif?raw=true" alt="Alt Text" width=1200 height=600>', unsafe_allow_html=True)
 
 
         location_expander = st.expander("Roaming")
