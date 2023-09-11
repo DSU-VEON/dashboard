@@ -115,27 +115,24 @@ with col2.container():
     
     
 if st.button("Give a Loan"):
-    # TODO make it GIF instead of .mp4
+
     if "Beeline" in provider_filter:
         st.write("You chose Beeline")
         
         user_input_gif = st.expander("Verification")
-        # user_input_gif.image(Image.open("gifs/verification.gif"), caption="Optional caption", use_column_width=True)
         user_input_gif.image("gifs/verification.gif", caption="User Verification", use_column_width=True)
             
         scoring_gif = st.expander("Scoring")
-        # scoring_gif.image(Image.open("gifs/scoring.gif"), caption="Optional caption", use_column_width=True)
-        # scoring_gif.markdown("![Alt Text](https://github.com/DSU-VEON/dashboard/blob/main/scoring.gif?raw=true)")
         scoring_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/scoring.gif?raw=true" alt="Alt Text" width=1200 height=600>', unsafe_allow_html=True)
         
-
             
         income_gif = st.expander("Income")
-        # income_gif.markdown("![Alt Text](https://github.com/DSU-VEON/dashboard/blob/main/income.gif?raw=true)")
         income_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/income.gif?raw=true" alt="Alt Text" width=1200 height=600>', unsafe_allow_html=True)
 
+        collection_gif = st.expander("Collection")
+        collection_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/collection.gif?raw=true" alt="Alt Text" width=1200 height=600>', unsafe_allow_html=True)
 
-        location_expander = st.expander("Roaming")
+        location_expander = st.expander("Number Monitoring")
         location_expander.markdown("### Changing Place of Living")
         location_expander.plotly_chart(my_plots.wkt_polygon(), use_container_width=True)
                 
@@ -147,7 +144,3 @@ if st.button("Give a Loan"):
         user_input_gif = st.expander("Expand to Input User Data")
         user_input_gif.image("gifs/verification.gif", caption="User Verification", use_column_width=True)
 
-# if st.button("Test Gif"):
-    
-#     # user_input_gif = st.expander("Verification")
-#     st.image("gifs/income.gif", caption="Income", use_column_width=True)
