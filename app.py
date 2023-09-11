@@ -130,7 +130,7 @@ if st.button("Give a Loan"):
         income_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/income.gif?raw=true" alt="Alt Text" width=1200 height=600>', unsafe_allow_html=True)
 
         collection_gif = st.expander("Collection")
-        collection_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/collection.gif?raw=true" alt="Alt Text" width=1200 height=1200>', unsafe_allow_html=True)
+        collection_gif.markdown('<img src="https://github.com/DSU-VEON/dashboard/blob/main/collection.gif?raw=true" alt="Alt Text" width=1200 height=1500>', unsafe_allow_html=True)
 
         location_expander = st.expander("Number Monitoring")
         location_expander.markdown("### Changing Place of Living")
